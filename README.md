@@ -2,6 +2,11 @@
 
 WILL ONLY RUN IF ALL MICROSOFT EDGE PROGRAMS CLOSED, BACKGROUND TASKS COUNT
 
+### Requirements
+- Preferrably python 3.14 or 3.13 for best compatibility as of this commit.
+- Pip.
+- Edge webdriver. Will install the zip, extract the executable.
+
 ### 1. Clone the Repository
 Clone the project to your local machine.
 
@@ -19,7 +24,6 @@ pip install selenium
 ```
 
 ### 5. Modify user data file location, profile if needed, and webdriver executable location
-Install edge webdriver.
 Change the strings within the following lines to match your file folders/locations:
 ```python
 edge_options.add_argument(r"--user-data-dir=C:\Users\horac\AppData\Local\Microsoft\Edge\User Data") # to use automated edge with profile, we have to locate user data
