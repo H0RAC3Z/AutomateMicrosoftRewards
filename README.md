@@ -19,7 +19,8 @@ pip install selenium
 ```
 
 ### 5. Modify user data file location, profile if needed, and webdriver executable location
-Concerns the strings within these lines:
+Install edge webdriver.
+Change the strings within the following lines to match your file folders/locations:
 ```python
 edge_options.add_argument(r"--user-data-dir=C:\Users\horac\AppData\Local\Microsoft\Edge\User Data") # to use automated edge with profile, we have to locate user data
 edge_options.add_argument("--profile-directory=Default") # default profile, could potentially be profile 1, 2, and so on
