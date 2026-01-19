@@ -136,9 +136,9 @@ lenArr = [len1-1, len2-1, len3-1, len4-1]
 
 edge_options = Options()
 
-edge_options.add_argument(r"--user-data-dir=C:\Users\horac\AppData\Local\Microsoft\Edge\User Data") # to use automated edge with profile, we have to locate user data
+edge_options.add_argument(r"--user-data-dir=/home/john-linux/.config/microsoft-edge/") # to use automated edge with profile, we have to locate user data
 edge_options.add_argument("--profile-directory=Default") # default profile, could potentially be profile 1, 2, and so on
-service = Service(r"C:\Users\horac\Documents\msedgedriver.exe") # explicitly defining where the webdriver executable is located
+service = Service(r"/home/john-linux/Documents/msedgedriver") # explicitly defining where the webdriver executable is located
 
 driver = webdriver.Edge(service=service, options=edge_options)
 driver.get("https://www.bing.com/") # get to bing
