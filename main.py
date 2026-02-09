@@ -151,7 +151,7 @@ driver.get("https://www.bing.com/") # get to bing
 #     elem.send_keys(search + Keys.ENTER)
 #     time.sleep(7) # search cooldown, recommended 7-10 seconds
 
-for i in range(30): # 30 times assuming 90 point maximum and 3 points per search
+for i in range(20): # 20 times assuming 60 point maximum and 3 points per search
     arr = []
     prompt = ""
     for index in lenArr:
